@@ -1,0 +1,20 @@
+<div class="container mt-4 animated fadein fast">
+    <h1>{{minion.name}}<small>Nacido en{{ minion.birth}}</small></h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <img [src]="minion.img" [alt]="minion.name" class="img-fluid">
+        <a [routerLink]="['/minions']" class="btn-outline-danger btn-block mt-3">volver</a>
+    </div>
+    <div class="col-md-8">
+        <h3>{{minion.name}}</h3>
+        <hr>
+        <p>{{minion.bio}}</p>
+        <h5>lado: {{minion.side}}</h5>
+        <div>
+        <img *ngIf="minion.side=='malvado'" src="../../assets/img/de los malos.PNG" alt="minion.name" class="img-fluid side">
+        <img *ngIf="minion.side=='de los buenos'" src="../../assets/img/de los buenos.PNG" alt="minion.name" class="img-fluid side">
+    </div>
+    </div>
+</div>
+</div>

@@ -1,0 +1,18 @@
+<h2 class="mt-4">Minions <small>a mansalva</small></h2>
+<hr> 
+
+<div class="container"> 
+   
+     <div class="card-columns mb-5"> 
+        <div class="card" *ngFor="let minion of minions; let i =index;"> 
+            <img [src]="minion.img" class="card-img top" [alt]="minion.name"> 
+            <div class="card-body"> 
+                <h5 class="card-title">{{minion.name}}</h5> 
+                <p class="card-text">{{minion.bio}}</p> 
+                <p class="card-text"><small class="text-muted">{{minion.birth}}</small></p> 
+            <button type="button" class="btn btn-outline-warning btn-block"  (click)="seeMinion(i)">Ver  más info</button> 
+            </div> 
+        </div> 
+    </div> 
+</div> 
+

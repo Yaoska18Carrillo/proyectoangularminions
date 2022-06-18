@@ -1,0 +1,22 @@
+img{ 
+    width: 17%; 
+  
+    left: 25%; 
+} 
+.card{
+    width: 40%;
+    margin: 50px;
+    padding: 10px;
+}
+/*.container{
+    width: 80%;
+    column-count: 2;
+    
+    column-gap: 10px;
+ */
+
+.card-columns{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*.card-columns mb-5{column-count: 2;}*/
